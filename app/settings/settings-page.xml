@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Configurações" />
+    
+    <ListView items="{{ locations }}" itemTap="{{ onLocationTap }}">
+        <ListView.itemTemplate>
+            <GridLayout columns="*, auto" class="settings-item p-10">
+                <StackLayout col="0">
+                    <Label text="{{ name }}" class="h2" />
+                    <Label text="{{ 'Raio: ' + radius + 'm' }}" class="body" />
+                </StackLayout>
+                <Button text="&#xf1f8;" 
+                        col="1" 
+                        class="fas delete-btn" 
+                        tap="{{ $parent.onDeleteLocation }}" />
+            </GridLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</Page>

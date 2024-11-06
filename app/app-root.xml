@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabView xmlns="http://schemas.nativescript.org/tns.xsd" selectedTabTextColor="#3498db">
+    <TabView.items>
+        <TabViewItem title="Locais" iconSource="font://&#xf3c5;">
+            <Frame defaultPage="locations/locations-page"></Frame>
+        </TabViewItem>
+        <TabViewItem title="Configurações" iconSource="font://&#xf013;">
+            <Frame defaultPage="settings/settings-page"></Frame>
+        </TabViewItem>
+    </TabView.items>
+</TabView>

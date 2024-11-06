@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <ActionBar title="Meu App" class="action-bar" />
+    <GridLayout>
+        <StackLayout class="p-20">
+            <Label text="Olá NativeScript!" class="h1 text-center" textWrap="true" />
+            <Button text="Clique aqui" tap="{{ onTap }}" class="btn btn-primary" />
+            <Label text="{{ message }}" textWrap="true" class="h2 text-center" />
+        </StackLayout>
+    </GridLayout>
+</Page>
